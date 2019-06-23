@@ -57,10 +57,6 @@ client.on('ready', function(){
  console.log(` ???????????????????`);
  console.log(` ???????????????????`);
 });
-client.on('disconnect', () => console.log('I just disconnected, making sure you know, I will reconnect now...'));
- 
-client.on('reconnecting', () => console.log('I am reconnecting now!'));
- 
 client.on('message', async msg => { // eslint disable line
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(&)) return undefined;
